@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cymrwm1mltgkt"
-path="res://.godot/imported/Hurt.png-4d44082a77aaf360ed4ce83f3af7f222.ctex"
+path="res://.godot/imported/Hurt.png-e6f07379f1f29fb47f70c9ca79fb2fdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Parrot/Parrot4/Hurt.png"
-dest_files=["res://.godot/imported/Hurt.png-4d44082a77aaf360ed4ce83f3af7f222.ctex"]
+source_file="res://Parrot/Parrot4/Hurt.png"
+dest_files=["res://.godot/imported/Hurt.png-e6f07379f1f29fb47f70c9ca79fb2fdd.ctex"]
 
 [params]
 

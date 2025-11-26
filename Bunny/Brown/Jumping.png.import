@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lwg6c5tiwipg"
-path="res://.godot/imported/Jumping.png-786d7a6ea6ed9913a12986fa451df1dd.ctex"
+path="res://.godot/imported/Jumping.png-424838e2805642218a6514621fc2e99c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/Jumping.png"
-dest_files=["res://.godot/imported/Jumping.png-786d7a6ea6ed9913a12986fa451df1dd.ctex"]
+source_file="res://Bunny/Brown/Jumping.png"
+dest_files=["res://.godot/imported/Jumping.png-424838e2805642218a6514621fc2e99c.ctex"]
 
 [params]
 

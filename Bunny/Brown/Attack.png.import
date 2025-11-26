@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp4tg4ca8721s"
-path="res://.godot/imported/Attack.png-bfeae3c1d892de260fab58324836c1a2.ctex"
+path="res://.godot/imported/Attack.png-e447db1c45f10149c46a5f2f6f2f1e29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/Attack.png"
-dest_files=["res://.godot/imported/Attack.png-bfeae3c1d892de260fab58324836c1a2.ctex"]
+source_file="res://Bunny/Brown/Attack.png"
+dest_files=["res://.godot/imported/Attack.png-e447db1c45f10149c46a5f2f6f2f1e29.ctex"]
 
 [params]
 

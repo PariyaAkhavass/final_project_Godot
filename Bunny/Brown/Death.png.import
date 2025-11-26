@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://et5afhdj1k0n"
-path="res://.godot/imported/Death.png-e2438030cb6bc84cc3fd72e6f8642b40.ctex"
+path="res://.godot/imported/Death.png-10845b75f8148ed30b89fdafef523578.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/Death.png"
-dest_files=["res://.godot/imported/Death.png-e2438030cb6bc84cc3fd72e6f8642b40.ctex"]
+source_file="res://Bunny/Brown/Death.png"
+dest_files=["res://.godot/imported/Death.png-10845b75f8148ed30b89fdafef523578.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdm7mn1l8gldc"
-path="res://.godot/imported/Sitting.png-0c63b810b85589017794a8809c1a1309.ctex"
+path="res://.godot/imported/Sitting.png-cf6356d9e4ca104093e5335324348859.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Parrot/Parrot5/Sitting.png"
-dest_files=["res://.godot/imported/Sitting.png-0c63b810b85589017794a8809c1a1309.ctex"]
+source_file="res://Parrot/Parrot5/Sitting.png"
+dest_files=["res://.godot/imported/Sitting.png-cf6356d9e4ca104093e5335324348859.ctex"]
 
 [params]
 

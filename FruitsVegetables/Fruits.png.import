@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcaymjxao0s4d"
-path="res://.godot/imported/Fruits.png-c6744218c088d35b98ecd8baeefc3c3f.ctex"
+path="res://.godot/imported/Fruits.png-d1b6790b1eb4e249a019c0a7dd77106c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/FruitsVegetables/Fruits.png"
-dest_files=["res://.godot/imported/Fruits.png-c6744218c088d35b98ecd8baeefc3c3f.ctex"]
+source_file="res://FruitsVegetables/Fruits.png"
+dest_files=["res://.godot/imported/Fruits.png-d1b6790b1eb4e249a019c0a7dd77106c.ctex"]
 
 [params]
 

@@ -1,81 +1,81 @@
 [gd_scene load_steps=9 format=3 uid="uid://pdayj6lpfufd"]
 
 [ext_resource type="Script" uid="uid://vvbqsnkfsgqu" path="res://dice.gd" id="1_rmhvh"]
-[ext_resource type="Texture2D" uid="uid://euhu5bws0vkh" path="res://Dice_assets/1.png" id="2_8rf0r"]
-[ext_resource type="Texture2D" uid="uid://cobxynoodcip1" path="res://Dice_assets/2.png" id="3_8rf0r"]
-[ext_resource type="Texture2D" uid="uid://dweicixbeff5a" path="res://Dice_assets/3.png" id="4_hitq5"]
-[ext_resource type="Texture2D" uid="uid://bdfq2fnkq8n61" path="res://Dice_assets/4.png" id="5_c6lvo"]
-[ext_resource type="Texture2D" uid="uid://cbdpkve1jbeym" path="res://Dice_assets/5.png" id="6_x03bd"]
-[ext_resource type="Texture2D" uid="uid://j51v1to6yboa" path="res://Dice_assets/6.png" id="7_0ih4c"]
+[ext_resource type="Texture2D" uid="uid://bdndh7b1rqka" path="res://D6/1.png" id="2_uhwa2"]
+[ext_resource type="Texture2D" uid="uid://ckr0ujp7pncpw" path="res://D6/2.png" id="3_m0p4u"]
+[ext_resource type="Texture2D" uid="uid://kxnbbui8ifcc" path="res://D6/3.png" id="4_4jbad"]
+[ext_resource type="Texture2D" uid="uid://b6ci2p0aa7cua" path="res://D6/4.png" id="5_h0vkw"]
+[ext_resource type="Texture2D" uid="uid://bahcr3x54q8y6" path="res://D6/5.png" id="6_2e0i4"]
+[ext_resource type="Texture2D" uid="uid://b0qjgvhqlbjjr" path="res://D6/6.png" id="7_nava2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ukaps"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_8rf0r")
+"texture": ExtResource("2_uhwa2")
 }],
-"loop": false,
+"loop": true,
 "name": &"1",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_8rf0r")
+"texture": ExtResource("3_m0p4u")
 }],
-"loop": false,
+"loop": true,
 "name": &"2",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_hitq5")
+"texture": ExtResource("4_4jbad")
 }],
-"loop": false,
+"loop": true,
 "name": &"3",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_c6lvo")
+"texture": ExtResource("5_h0vkw")
 }],
-"loop": false,
+"loop": true,
 "name": &"4",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_x03bd")
+"texture": ExtResource("6_2e0i4")
 }],
-"loop": false,
+"loop": true,
 "name": &"5",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_0ih4c")
+"texture": ExtResource("7_nava2")
 }],
-"loop": false,
+"loop": true,
 "name": &"6",
-"speed": 0.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_8rf0r")
+"texture": ExtResource("2_uhwa2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_8rf0r")
+"texture": ExtResource("3_m0p4u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_hitq5")
+"texture": ExtResource("4_4jbad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_c6lvo")
+"texture": ExtResource("5_h0vkw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_x03bd")
+"texture": ExtResource("6_2e0i4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_0ih4c")
+"texture": ExtResource("7_nava2")
 }],
 "loop": false,
 "name": &"Rolling",
@@ -87,12 +87,14 @@ script = ExtResource("1_rmhvh")
 
 [node name="D6_Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(591, 311)
+scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ukaps")
-animation = &"1"
+animation = &"Rolling"
 
 [node name="Roll button" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+theme_override_font_sizes/font_size = 26
 text = "Roll!"
 
 [connection signal="animation_finished" from="D6_Sprite" to="." method="_on_d_6_sprite_animation_finished"]

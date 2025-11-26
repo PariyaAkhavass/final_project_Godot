@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3ox65ugo44u7"
-path="res://.godot/imported/Running.png-17dad371b07589a8f1e1eb9b2927e614.ctex"
+path="res://.godot/imported/Running.png-61cfcfa9ead6cb0a7becc3bb2e7b466c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/Running.png"
-dest_files=["res://.godot/imported/Running.png-17dad371b07589a8f1e1eb9b2927e614.ctex"]
+source_file="res://Bunny/Brown/Running.png"
+dest_files=["res://.godot/imported/Running.png-61cfcfa9ead6cb0a7becc3bb2e7b466c.ctex"]
 
 [params]
 

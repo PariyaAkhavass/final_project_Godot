@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpm4b6blexmee"
-path="res://.godot/imported/BunnyBannerrr.png-9defcc72365685a88cabc041ea702a86.ctex"
+path="res://.godot/imported/BunnyBannerrr.png-09093dcaae10f412b517ebc00a669f1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/LightBrown/BunnyBannerrr.png"
-dest_files=["res://.godot/imported/BunnyBannerrr.png-9defcc72365685a88cabc041ea702a86.ctex"]
+source_file="res://Bunny/LightBrown/BunnyBannerrr.png"
+dest_files=["res://.godot/imported/BunnyBannerrr.png-09093dcaae10f412b517ebc00a669f1a.ctex"]
 
 [params]
 

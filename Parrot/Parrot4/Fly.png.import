@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfq88ntv1yau5"
-path="res://.godot/imported/Fly.png-4cc87b2a50bf67f82df6ce9315f0e4ef.ctex"
+path="res://.godot/imported/Fly.png-b48f36b33415e64f31c008ddee188baa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Parrot/Parrot4/Fly.png"
-dest_files=["res://.godot/imported/Fly.png-4cc87b2a50bf67f82df6ce9315f0e4ef.ctex"]
+source_file="res://Parrot/Parrot4/Fly.png"
+dest_files=["res://.godot/imported/Fly.png-b48f36b33415e64f31c008ddee188baa.ctex"]
 
 [params]
 

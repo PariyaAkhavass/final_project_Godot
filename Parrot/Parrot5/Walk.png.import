@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl12l7x2vmynx"
-path="res://.godot/imported/Walk.png-825bc958d63c626cb866f81d66f502df.ctex"
+path="res://.godot/imported/Walk.png-2dd22536c71c9488600d94f22cc7d238.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Parrot/Parrot5/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-825bc958d63c626cb866f81d66f502df.ctex"]
+source_file="res://Parrot/Parrot5/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-2dd22536c71c9488600d94f22cc7d238.ctex"]
 
 [params]
 

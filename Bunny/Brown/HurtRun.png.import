@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clcmd1h0iuiue"
-path="res://.godot/imported/HurtRun.png-9e7ddbe2c746c75fcf66e951025d819e.ctex"
+path="res://.godot/imported/HurtRun.png-fb65c79ee985e9a7230cbe1165dc336c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/HurtRun.png"
-dest_files=["res://.godot/imported/HurtRun.png-9e7ddbe2c746c75fcf66e951025d819e.ctex"]
+source_file="res://Bunny/Brown/HurtRun.png"
+dest_files=["res://.godot/imported/HurtRun.png-fb65c79ee985e9a7230cbe1165dc336c.ctex"]
 
 [params]
 

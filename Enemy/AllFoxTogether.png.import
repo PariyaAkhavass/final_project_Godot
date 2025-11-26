@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co7awakl1xtpr"
-path="res://.godot/imported/AllFoxTogether.png-ceeaff686bc738d80c8a89bc87cd0320.ctex"
+path="res://.godot/imported/AllFoxTogether.png-e8869833ad16b2b56309798ae0d8c712.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/AllFoxTogether.png"
-dest_files=["res://.godot/imported/AllFoxTogether.png-ceeaff686bc738d80c8a89bc87cd0320.ctex"]
+source_file="res://Enemy/AllFoxTogether.png"
+dest_files=["res://.godot/imported/AllFoxTogether.png-e8869833ad16b2b56309798ae0d8c712.ctex"]
 
 [params]
 

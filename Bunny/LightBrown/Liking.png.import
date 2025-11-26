@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2t4kc04sqi6p"
-path="res://.godot/imported/Liking.png-1a67ffc259c50f920ac5a4a3d83519ad.ctex"
+path="res://.godot/imported/Liking.png-0e15ebb8a71bf0415a1db15416efaf97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/LightBrown/Liking.png"
-dest_files=["res://.godot/imported/Liking.png-1a67ffc259c50f920ac5a4a3d83519ad.ctex"]
+source_file="res://Bunny/LightBrown/Liking.png"
+dest_files=["res://.godot/imported/Liking.png-0e15ebb8a71bf0415a1db15416efaf97.ctex"]
 
 [params]
 

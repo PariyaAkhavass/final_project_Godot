@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tdrw135lf4ln"
-path="res://.godot/imported/LieDown.png-2bad7d001cf0bb3e01c23b73c4e0c6a6.ctex"
+path="res://.godot/imported/LieDown.png-21b65be740c253be8b302a719187e08d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/LieDown.png"
-dest_files=["res://.godot/imported/LieDown.png-2bad7d001cf0bb3e01c23b73c4e0c6a6.ctex"]
+source_file="res://Bunny/Brown/LieDown.png"
+dest_files=["res://.godot/imported/LieDown.png-21b65be740c253be8b302a719187e08d.ctex"]
 
 [params]
 

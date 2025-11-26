@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo5wvrisrtvjf"
-path="res://.godot/imported/Idle.png-3e7e15997c2fa94326170e9ac1604a54.ctex"
+path="res://.godot/imported/Idle.png-1dd27c9aeeae7d5eb58e87bf435a5f06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Parrot/Parrot4/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-3e7e15997c2fa94326170e9ac1604a54.ctex"]
+source_file="res://Parrot/Parrot4/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-1dd27c9aeeae7d5eb58e87bf435a5f06.ctex"]
 
 [params]
 

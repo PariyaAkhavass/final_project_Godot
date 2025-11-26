@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dea7175mqkvro"
-path="res://.godot/imported/HurtIdle.png-19b849bbd87598aa33a83bf4d1a335c5.ctex"
+path="res://.godot/imported/HurtIdle.png-851891d5fbd04a457465cef9e3881290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Bunny/Brown/HurtIdle.png"
-dest_files=["res://.godot/imported/HurtIdle.png-19b849bbd87598aa33a83bf4d1a335c5.ctex"]
+source_file="res://Bunny/Brown/HurtIdle.png"
+dest_files=["res://.godot/imported/HurtIdle.png-851891d5fbd04a457465cef9e3881290.ctex"]
 
 [params]
 

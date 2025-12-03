@@ -5,7 +5,7 @@ extends Node2D
 
 var levels := ["forest", "tundra", "desert", "sea"]
 @onready var scene_forest = preload("res://forest.tscn")
-@onready var scene_tundra = preload("res://tundra.tscn")
+#@onready var scene_tundra = preload("res://tundra.tscn")
 #@onready var scene_tundra = preload("res://third.tscn")
 #@onready var scene_tundra = preload("res://fourth.tscn")
 
@@ -38,5 +38,5 @@ func wait_and_change_scene():
 	await get_tree().create_timer(1).timeout
 	if current_roll <2:
 		get_tree().change_scene_to_packed(scene_forest)
-	else:
-		get_tree().change_scene_to_packed(scene_tundra)
+	#else:
+		#get_tree().change_scene_to_packed(scene_tundra)

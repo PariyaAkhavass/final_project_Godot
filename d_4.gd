@@ -40,3 +40,4 @@ func wait_and_change_scene():
 		get_tree().change_scene_to_packed(scene_forest)
 	#else:
 		#get_tree().change_scene_to_packed(scene_tundra)
+	

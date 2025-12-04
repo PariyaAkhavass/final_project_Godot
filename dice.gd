@@ -21,3 +21,15 @@ func _on_d_6_sprite_animation_finished() -> void:
 		dice_sprite.play("5")
 	elif new_number == 6:
 		dice_sprite.play("6")
+	
+# Enemy appearing
+func enemy_call() -> void:
+	var 
+	
+	
+	
+# What happens when each of the faces appear
+func resolve_event() -> void:
+	var new_number = randi_range(1,6)
+	if new_number == 1:
+		

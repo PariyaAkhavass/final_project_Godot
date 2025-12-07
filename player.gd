@@ -1,28 +1,37 @@
 extends CharacterBody2D
-@onready var animated_sprite :AnimatedSprite2D= $AnimatedSprite2D
-@export var speed := 100.0
-# @export allows for direct changes from the inspector
-@export var jump_speed := 10.0
 
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export var speed := 300.0
 
-func _physics_process(delta: float) -> void:
-	var direction := Input.get_vector("move_left","move_right", "move_down", "move_up")
+func _physics_process(_delta: float) -> void:
+	# Get input vector
+	var direction = Vector2.ZERO
+	if Input.is_action_pressed("move_left"):
+		direction.x -= 1
+	if Input.is_action_pressed("move_right"):
+		direction.x += 1
+	if Input.is_action_pressed("move_up"):
+		direction.y -= 1
+	if Input.is_action_pressed("move_down"):
+		direction.y += 1
+
+	# Normalize diagonal movement
 	if direction != Vector2.ZERO:
-		velocity = direction*300.0
+		direction = direction.normalized()
+		velocity = direction * speed
 	else:
 		velocity = Vector2.ZERO
-		move_and_slide()
 
-	if Input.is_action_just_pressed("jump") && is_on_floor():
-		velocity.y=jump_speed
 	move_and_slide()
-	
-	if direction >Vector2.ZERO:
+
+	# Flip sprite horizontally
+	if direction.x > 0:
 		animated_sprite.flip_h = false
-	elif direction <Vector2.ZERO:
+	elif direction.x < 0:
 		animated_sprite.flip_h = true
 
+	# Play animations
 	if direction == Vector2.ZERO:
-		animated_sprite.play("idle")
+		$AnimatedSprite2D.play("idle")
 	else:
 		animated_sprite.play("run")

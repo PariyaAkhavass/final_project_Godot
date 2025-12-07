@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://cgbuc3h8sum55"]
+
+[ext_resource type="Texture2D" uid="uid://d3ox65ugo44u7" path="res://Bunny/Brown/Running.png" id="1_467nd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmpv0"]
+atlas = ExtResource("1_467nd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50vjr"]
+atlas = ExtResource("1_467nd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfhfu"]
+atlas = ExtResource("1_467nd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te2sk"]
+atlas = ExtResource("1_467nd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plxxe"]
+atlas = ExtResource("1_467nd")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci2hk"]
+atlas = ExtResource("1_467nd")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufjpq"]
+atlas = ExtResource("1_467nd")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm7jf"]
+atlas = ExtResource("1_467nd")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2t4bk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmpv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50vjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfhfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te2sk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plxxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci2hk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufjpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm7jf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_467nd"]
+radius = 7.0
+
+[node name="Brown Bunny" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_2t4bk")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+position = Vector2(-3, 9)
+shape = SubResource("CircleShape2D_467nd")

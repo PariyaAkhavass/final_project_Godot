@@ -22,14 +22,12 @@ func _on_d_6_sprite_animation_finished() -> void:
 	elif new_number == 6:
 		dice_sprite.play("6")
 	
-# Enemy appearing
-func enemy_call() -> void:
-	var 
-	
-	
-	
-# What happens when each of the faces appear
-func resolve_event() -> void:
-	var new_number = randi_range(1,6)
-	if new_number == 1:
-		
+func show_random_enemy(dice_number: int):
+	if dice_number <= 3:
+		$"../fox".visible = true
+		$"../wolf".visible = false
+		print("Fox appeared!")
+	else:
+		$"../wolf".visible = true
+		$"../fox".visible = false
+		print("Wolf appeared!")

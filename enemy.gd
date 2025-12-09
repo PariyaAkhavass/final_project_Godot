@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Node2D
 
 @export var speed := 120
 @export var player_path : NodePath
@@ -13,10 +13,6 @@ func _physics_process(_delta: float) -> void:
 		return
 
 	# Calculate direction toward the player
-	var direction = (player.global_position - global_position).normalized()
-	velocity = direction * speed
-	move_and_slide()
-
 	# Check if player is caught
 	if global_position.distance_to(player.global_position) < 20:
 		player_caught()

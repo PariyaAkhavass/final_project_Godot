@@ -1,6 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dbqylwb3ynxcf"]
+[gd_scene load_steps=13 format=3 uid="uid://dbqylwb3ynxcf"]
 
+[ext_resource type="Script" uid="uid://dd70rb4vsjnak" path="res://enemy.gd" id="1_6trwa"]
 [ext_resource type="Texture2D" uid="uid://df4e6ptkq44u1" path="res://Enemy/WolfSprites.png" id="1_fv4gx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_31tei"]
+radius = 6.3999996
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6trwa"]
 atlas = ExtResource("1_fv4gx")
@@ -66,17 +70,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_31tei"]
-radius = 6.3999996
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_6trwa")
 
-[node name="wolf" type="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 23.999996)
+scale = Vector2(2.4999998, 2.4999998)
+shape = SubResource("CircleShape2D_31tei")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2.5, 2.5)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+position = Vector2(0, -9.599999)
+scale = Vector2(1.0000001, 1.0000001)
 sprite_frames = SubResource("SpriteFrames_jvsp5")
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 23.999998)
-scale = Vector2(2.5, 2.5)
-shape = SubResource("CircleShape2D_31tei")
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

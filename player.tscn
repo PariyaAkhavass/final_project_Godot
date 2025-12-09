@@ -71,7 +71,7 @@ animations = [{
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4flbx"]
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="Node"]
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

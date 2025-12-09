@@ -1,37 +1,31 @@
 extends CharacterBody2D
 
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
 @export var speed := 300.0
 
-func _physics_process(_delta: float) -> void:
-	# Get input vector
-	var direction = Vector2.ZERO
-	if Input.is_action_pressed("move_left"):
-		direction.x -= 1
-	if Input.is_action_pressed("move_right"):
-		direction.x += 1
-	if Input.is_action_pressed("move_up"):
-		direction.y -= 1
-	if Input.is_action_pressed("move_down"):
-		direction.y += 1
+var external_velocity := Vector2.ZERO  # movement from UI buttons
 
-	# Normalize diagonal movement
+ 
+func _physics_process(delta: float) -> void:
+	# Keyboard movement
+	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+
+	# If keyboard is used → override button movement
 	if direction != Vector2.ZERO:
-		direction = direction.normalized()
 		velocity = direction * speed
 	else:
-		velocity = Vector2.ZERO
+		velocity = external_velocity
 
 	move_and_slide()
 
-	# Flip sprite horizontally
-	if direction.x > 0:
+	# Flip sprite
+	if velocity.x > 0:
 		animated_sprite.flip_h = false
-	elif direction.x < 0:
+	elif velocity.x < 0:
 		animated_sprite.flip_h = true
 
-	# Play animations
-	if direction == Vector2.ZERO:
-		$AnimatedSprite2D.play("idle")
+	# Animations
+	if velocity == Vector2.ZERO:
+		animated_sprite.play("idle")
 	else:
 		animated_sprite.play("run")

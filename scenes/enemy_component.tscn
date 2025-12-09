@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://mn226a4a6q4g"]
+
+[ext_resource type="Script" uid="uid://o5dj3cjagx6" path="res://scripts/enemy_component.gd" id="1_wmfil"]
+
+[node name="enemy_component" type="Node"]
+script = ExtResource("1_wmfil")

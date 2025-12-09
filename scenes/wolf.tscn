@@ -1,10 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://dbqylwb3ynxcf"]
+[gd_scene load_steps=14 format=3 uid="uid://dbqylwb3ynxcf"]
 
-[ext_resource type="Script" uid="uid://dd70rb4vsjnak" path="res://enemy.gd" id="1_6trwa"]
-[ext_resource type="Texture2D" uid="uid://df4e6ptkq44u1" path="res://Enemy/WolfSprites.png" id="1_fv4gx"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_31tei"]
-radius = 6.3999996
+[ext_resource type="Texture2D" uid="uid://bdua4tm4u32xm" path="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Enemy/WolfSprites.png" id="1_fv4gx"]
+[ext_resource type="PackedScene" uid="uid://mn226a4a6q4g" path="res://scenes/enemy_component.tscn" id="2_jrowp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6trwa"]
 atlas = ExtResource("1_fv4gx")
@@ -70,18 +67,32 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Area2D" type="Area2D"]
-script = ExtResource("1_6trwa")
+[sub_resource type="CircleShape2D" id="CircleShape2D_31tei"]
+radius = 6.3999996
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 23.999996)
-scale = Vector2(2.4999998, 2.4999998)
-shape = SubResource("CircleShape2D_31tei")
+[sub_resource type="CircleShape2D" id="CircleShape2D_xsq4n"]
+radius = 20.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
-position = Vector2(0, -9.599999)
-scale = Vector2(1.0000001, 1.0000001)
+[node name="wolf" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -33)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_jvsp5")
 autoplay = "default"
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.1920929e-07)
+scale = Vector2(2.4999995, 2.4999995)
+shape = SubResource("CircleShape2D_31tei")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_xsq4n")
+
+[node name="enemy_component" parent="." node_paths=PackedStringArray("enemy", "enemy_sprite") instance=ExtResource("2_jrowp")]
+enemy = NodePath("..")
+enemy_sprite = NodePath("../AnimatedSprite2D")
+
+[connection signal="body_entered" from="Area2D" to="enemy_component" method="body_entered"]

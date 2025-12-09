@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://dk6ue4mdc17kf"]
+[gd_scene load_steps=14 format=3 uid="uid://dk6ue4mdc17kf"]
 
-[ext_resource type="Texture2D" uid="uid://co7awakl1xtpr" path="res://Enemy/AllFoxTogether.png" id="1_8x0u3"]
-[ext_resource type="Script" uid="uid://dd70rb4vsjnak" path="res://enemy.gd" id="1_kpck0"]
+[ext_resource type="Texture2D" uid="uid://co7awakl1xtpr" path="res://EnvironmentPack/EnvironmentPack/ForestAnimals/Enemy/AllFoxTogether.png" id="1_8x0u3"]
+[ext_resource type="PackedScene" uid="uid://mn226a4a6q4g" path="res://scenes/enemy_component.tscn" id="2_ufccv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kpck0"]
 atlas = ExtResource("1_8x0u3")
@@ -67,11 +67,12 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_8x0u3"]
-radius = 4.0792155
+[sub_resource type="CircleShape2D" id="CircleShape2D_ufccv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_35nom"]
+radius = 16.0
 
 [node name="fox" type="CharacterBody2D"]
-script = ExtResource("1_kpck0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -24)
@@ -79,6 +80,18 @@ scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_yd78t")
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-position = Vector2(0, 11.599999)
-shape = SubResource("CircleShape2D_8x0u3")
+[node name="enemy_component" parent="." node_paths=PackedStringArray("enemy", "enemy_sprite") instance=ExtResource("2_ufccv")]
+enemy = NodePath("..")
+enemy_sprite = NodePath("../AnimatedSprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_ufccv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_35nom")
+
+[connection signal="body_entered" from="Area2D" to="enemy_component" method="body_entered"]

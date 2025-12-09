@@ -12,4 +12,5 @@ func _ready() -> void:
 
 #pick up the fruit, go back to the map
 func _on_potato_body_entered(body: Node2D) -> void:
+	Ui.number()
 	get_tree().change_scene_to_packed(scene_map)

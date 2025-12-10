@@ -8,3 +8,5 @@ func _ready() -> void:
 func number() -> void:
 	count +=1
 	food_label.text = str(count)
+	if count >= 7:
+		get_tree().change_scene_to_file("res://scenes/victory.tscn")

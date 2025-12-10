@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://sk6dptjyjlhb" path="res://scenes/player.tscn" id="3_0nboi"]
 [ext_resource type="TileSet" uid="uid://bpou8bo00nfy2" path="res://scenes/details_forest.tres" id="4_ercsu"]
 [ext_resource type="PackedScene" uid="uid://pdayj6lpfufd" path="res://scenes/d_6.tscn" id="5_3knxq"]
-[ext_resource type="AudioStream" uid="uid://c3pnvqg5px3ra" path="res://OST/forest_ost.mp3" id="5_ercsu"]
 [ext_resource type="Texture2D" uid="uid://xjtnm7nk51g3" path="res://EnvironmentPack/EnvironmentPack/AnimatedTrees/AnimatedClassicalTrees/AnimatedTreeWarmColor.png" id="6_j3csf"]
+[ext_resource type="AudioStream" uid="uid://d285saw4yxe5n" path="res://OST/ost_forest.mp3" id="7_3knxq"]
 [ext_resource type="Texture2D" uid="uid://chkm06rbngrso" path="res://EnvironmentPack/EnvironmentPack/AnimatedTrees/AnimatedClassicalTrees/AnimatedTreeCoolColor.png" id="7_dabdc"]
 [ext_resource type="PackedScene" uid="uid://bapq7rp1racg2" path="res://scenes/apple.tscn" id="9_0nboi"]
 
@@ -277,7 +277,8 @@ position = Vector2(142, -102)
 motion_mode = 1
 
 [node name="forest_theme" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_ercsu")
+stream = ExtResource("7_3knxq")
+max_distance = 9.223372e+18
 
 [node name="animated_trees" type="Node" parent="."]
 
@@ -344,6 +345,3 @@ position = Vector2(852, 548)
 position = Vector2(184, 1052)
 
 [connection signal="ready" from="forest_theme" to="." method="_on_audio_stream_player_2d_ready"]
-[connection signal="body_entered" from="apple" to="apple/fruit_component" method="body_entered"]
-[connection signal="body_entered" from="apple2" to="apple2/fruit_component" method="body_entered"]
-[connection signal="body_entered" from="apple3" to="apple3/fruit_component" method="body_entered"]
